@@ -12,7 +12,7 @@ Some of the tools shared here originate from our commercial product, Chariot —
 * Vulnerability Management
 * Breach and Attack Simulation
 * Continuous Penetration Testing
-* Exploit Intelligence
+* Cyber Threat & Exploit Intelligence
 
 These tools are shared with the community under the Apache-2.0 license to help improve the global security posture.
 
