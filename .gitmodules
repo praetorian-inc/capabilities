@@ -1,0 +1,31 @@
+# PUBLIC SUBMODULES (HTTPS - anyone can clone)
+[submodule "modules/fingerprintx"]
+	path = modules/fingerprintx
+	url = https://github.com/praetorian-inc/fingerprintx.git
+[submodule "modules/nebula"]
+	path = modules/nebula
+	url = https://github.com/praetorian-inc/nebula.git
+[submodule "modules/noseyparker"]
+	path = modules/noseyparker
+	url = https://github.com/praetorian-inc/noseyparker.git
+[submodule "modules/noseyparker-explorer"]
+	path = modules/noseyparker-explorer
+	url = https://github.com/praetorian-inc/noseyparker-explorer.git
+
+# PRIVATE SUBMODULES (SSH - requires authentication)
+# These are NOT included in public clone and NOT in public README
+[submodule "modules/trajan"]
+	path = modules/trajan
+	url = git@github.com:praetorian-inc/trajan.git
+[submodule "modules/nero"]
+	path = modules/nero
+	url = git@github.com:praetorian-inc/nero.git
+[submodule "modules/augustus"]
+	path = modules/augustus
+	url = git@github.com:praetorian-inc/augustus.git
+[submodule "modules/noseyparkerplusplus"]
+	path = modules/noseyparkerplusplus
+	url = git@github.com:praetorian-inc/noseyparkerplusplus.git
+[submodule "modules/nuclei-templates"]
+	path = modules/nuclei-templates
+	url = git@github.com:praetorian-inc/nuclei-templates.git
