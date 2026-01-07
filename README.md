@@ -10,6 +10,12 @@ We prevent breaches by emulating attackers. Our goal is to help organisations pr
 
 ## 🌐 Nebula - Multi-Cloud Security Scanner
 
+[![GitHub stars](https://img.shields.io/github/stars/praetorian-inc/nebula?style=flat-square)](https://github.com/praetorian-inc/nebula/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/praetorian-inc/nebula?style=flat-square)](https://github.com/praetorian-inc/nebula/network/members)
+[![GitHub issues](https://img.shields.io/github/issues/praetorian-inc/nebula?style=flat-square)](https://github.com/praetorian-inc/nebula/issues)
+[![Go Version](https://img.shields.io/github/go-mod/go-version/praetorian-inc/nebula?style=flat-square)](https://github.com/praetorian-inc/nebula)
+[![License](https://img.shields.io/github/license/praetorian-inc/nebula?style=flat-square)](https://github.com/praetorian-inc/nebula/blob/main/LICENSE)
+
 **Unified security scanning across AWS, Azure, and GCP.**
 
 Nebula provides comprehensive cloud security assessment with findings formatted for the Chariot attack surface management platform.
@@ -31,6 +37,12 @@ nebula aws summary
 ---
 
 ## 🔎 Fingerprintx - Service Fingerprinting
+
+[![GitHub stars](https://img.shields.io/github/stars/praetorian-inc/fingerprintx?style=flat-square)](https://github.com/praetorian-inc/fingerprintx/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/praetorian-inc/fingerprintx?style=flat-square)](https://github.com/praetorian-inc/fingerprintx/network/members)
+[![GitHub issues](https://img.shields.io/github/issues/praetorian-inc/fingerprintx?style=flat-square)](https://github.com/praetorian-inc/fingerprintx/issues)
+[![Go Version](https://img.shields.io/github/go-mod/go-version/praetorian-inc/fingerprintx?style=flat-square)](https://github.com/praetorian-inc/fingerprintx)
+[![License](https://img.shields.io/github/license/praetorian-inc/fingerprintx?style=flat-square)](https://github.com/praetorian-inc/fingerprintx/blob/main/LICENSE)
 
 **Identify running services with precision.**
 
@@ -54,6 +66,12 @@ echo "example.com:443" | fingerprintx
 
 ## 🔐 NoseyParker - Secret Scanner
 
+[![GitHub stars](https://img.shields.io/github/stars/praetorian-inc/noseyparker?style=flat-square)](https://github.com/praetorian-inc/noseyparker/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/praetorian-inc/noseyparker?style=flat-square)](https://github.com/praetorian-inc/noseyparker/network/members)
+[![GitHub issues](https://img.shields.io/github/issues/praetorian-inc/noseyparker?style=flat-square)](https://github.com/praetorian-inc/noseyparker/issues)
+[![License](https://img.shields.io/github/license/praetorian-inc/noseyparker?style=flat-square)](https://github.com/praetorian-inc/noseyparker/blob/main/LICENSE)
+![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=flat-square&logo=rust&logoColor=white)
+
 **Find secrets in code repositories at scale.**
 
 NoseyParker is a high-performance secret scanning engine written in Rust, designed to detect leaked credentials, API keys, and sensitive data.
@@ -76,6 +94,11 @@ noseyparker report --datastore np.db
 ---
 
 ## 📊 NoseyParker Explorer - Web UI
+
+[![GitHub stars](https://img.shields.io/github/stars/praetorian-inc/noseyparker-explorer?style=flat-square)](https://github.com/praetorian-inc/noseyparker-explorer/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/praetorian-inc/noseyparker-explorer?style=flat-square)](https://github.com/praetorian-inc/noseyparker-explorer/network/members)
+[![GitHub issues](https://img.shields.io/github/issues/praetorian-inc/noseyparker-explorer?style=flat-square)](https://github.com/praetorian-inc/noseyparker-explorer/issues)
+[![License](https://img.shields.io/github/license/praetorian-inc/noseyparker-explorer?style=flat-square)](https://github.com/praetorian-inc/noseyparker-explorer/blob/main/LICENSE)
 
 **Visualize and triage secret findings.**
 
@@ -102,7 +125,7 @@ make setup
 
 ### Update all submodules:
 ```bash
-make update
+make submodule-pull
 ```
 
 ---
