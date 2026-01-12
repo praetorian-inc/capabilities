@@ -22,7 +22,7 @@
 	url = git@github.com:praetorian-inc/nero.git
 [submodule "modules/augustus"]
 	path = modules/augustus
-	url = git@github.com:praetorian-inc/augustus.git
+	url = https://github.com/praetorian-inc/augustus.git
 [submodule "modules/noseyparkerplusplus"]
 	path = modules/noseyparkerplusplus
 	url = git@github.com:praetorian-inc/noseyparkerplusplus.git
