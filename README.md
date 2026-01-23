@@ -8,7 +8,11 @@ We prevent breaches by emulating attackers. Our goal is to help organisations pr
 
 ---
 
-## 🌐 Nebula - Multi-Cloud Security Scanner
+## Public Tools
+
+These tools are open source and available to everyone.
+
+### Nebula - Multi-Cloud Security Scanner
 
 [![GitHub stars](https://img.shields.io/github/stars/praetorian-inc/nebula?style=flat-square)](https://github.com/praetorian-inc/nebula/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/praetorian-inc/nebula?style=flat-square)](https://github.com/praetorian-inc/nebula/network/members)
@@ -36,7 +40,7 @@ nebula aws summary
 
 ---
 
-## 🔎 Fingerprintx - Service Fingerprinting
+### Fingerprintx - Service Fingerprinting
 
 [![GitHub stars](https://img.shields.io/github/stars/praetorian-inc/fingerprintx?style=flat-square)](https://github.com/praetorian-inc/fingerprintx/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/praetorian-inc/fingerprintx?style=flat-square)](https://github.com/praetorian-inc/fingerprintx/network/members)
@@ -64,7 +68,7 @@ echo "example.com:443" | fingerprintx
 
 ---
 
-## 🔐 NoseyParker - Secret Scanner
+### NoseyParker - Secret Scanner
 
 [![GitHub stars](https://img.shields.io/github/stars/praetorian-inc/noseyparker?style=flat-square)](https://github.com/praetorian-inc/noseyparker/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/praetorian-inc/noseyparker?style=flat-square)](https://github.com/praetorian-inc/noseyparker/network/members)
@@ -93,7 +97,7 @@ noseyparker report --datastore np.db
 
 ---
 
-## 📊 NoseyParker Explorer - Web UI
+### NoseyParker Explorer - Web UI
 
 [![GitHub stars](https://img.shields.io/github/stars/praetorian-inc/noseyparker-explorer?style=flat-square)](https://github.com/praetorian-inc/noseyparker-explorer/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/praetorian-inc/noseyparker-explorer?style=flat-square)](https://github.com/praetorian-inc/noseyparker-explorer/network/members)
@@ -114,6 +118,137 @@ A web-based interface for exploring NoseyParker scan results, designed for secur
 
 ---
 
+## Internal Tools
+
+These tools are available to Praetorian team members and require GitHub organization access.
+
+### Augustus - LLM Security Testing Framework
+
+**Detect prompt injection, jailbreaks, and adversarial attacks against LLMs.**
+
+Augustus is a comprehensive LLM security testing framework with 46+ probes and support for 19 providers, packaged as a single Go binary.
+
+**Key Features:**
+- 46+ security probes for LLM testing
+- Support for 19 LLM providers
+- Prompt injection and jailbreak detection
+- Adversarial attack simulation
+
+[Documentation](./modules/augustus)
+
+---
+
+### Brutus - Credential Testing Tool
+
+**Fast, zero-dependency credential testing in Go.**
+
+Brutus is a high-performance brute force tool supporting SSH, MySQL, PostgreSQL, Redis, MongoDB, SMB, and 20+ protocols. A modern Hydra alternative with native fingerprintx/naabu pipeline integration.
+
+**Key Features:**
+- 20+ protocol support
+- Zero external dependencies
+- Native integration with fingerprintx and naabu
+- High-performance concurrent testing
+
+[Documentation](./modules/brutus)
+
+---
+
+### Nero - Default Credential Scanner
+
+**Scan for default and weak credentials across multiple protocols.**
+
+Nero is a default credential scanner with a plugin architecture supporting multiple protocols, designed to identify systems using factory-default or commonly-used credentials.
+
+**Key Features:**
+- Plugin-based architecture
+- Multi-protocol support
+- Default credential database
+- Extensible framework
+
+[Documentation](./modules/nero)
+
+---
+
+### Trajan - CI/CD Security Scanner
+
+**Detect security vulnerabilities in GitHub Actions workflows.**
+
+Trajan scans CI/CD pipelines for Actions Injection, Pwn Requests, TOCTOU vulnerabilities, artifact poisoning, and AI prompt injection attacks.
+
+**Key Features:**
+- GitHub Actions security scanning
+- Actions Injection detection
+- Pwn Request identification
+- Artifact poisoning detection
+- AI prompt injection analysis
+
+[Documentation](./modules/trajan)
+
+---
+
+### Diocletian - Cloud Security Assessment
+
+**Comprehensive cloud security assessment tool.**
+
+Diocletian provides cloud security assessment capabilities for identifying misconfigurations and security issues across cloud environments.
+
+**Key Features:**
+- Cloud security scanning
+- Misconfiguration detection
+- Security assessment reporting
+
+[Documentation](./modules/diocletian)
+
+---
+
+### NoseyParker++ - Enhanced Secret Scanner
+
+**Internal version of NoseyParker with additional ML features.**
+
+An enhanced version of NoseyParker that includes machine learning capabilities for improved secret detection and reduced false positives.
+
+**Key Features:**
+- All NoseyParker features
+- ML-enhanced detection
+- Reduced false positive rate
+- Internal rule sets
+
+[Documentation](./modules/noseyparkerplusplus)
+
+---
+
+### Nuclei Templates - Custom Vulnerability Templates
+
+**Internal version of Nuclei templates with custom detections.**
+
+A curated collection of Nuclei templates including internal templates and customizations for Praetorian's security testing workflows.
+
+**Key Features:**
+- Custom vulnerability templates
+- Internal detection rules
+- Praetorian-specific checks
+
+[Documentation](./modules/nuclei-templates)
+
+---
+
+### Capability SDK - Go Development Kit
+
+**Go SDK for building security capabilities.**
+
+A standardized SDK providing common types, formatters, and utilities for building security tools that integrate with the Chariot platform.
+
+**Key Features:**
+- Standardized output types
+- Chariot integration helpers
+- Common formatters
+- Reusable utilities
+
+[Documentation](./modules/capability-sdk)
+
+---
+
 ## Installation
 
 ### Clone with all public tools:
@@ -121,6 +256,13 @@ A web-based interface for exploring NoseyParker scan results, designed for secur
 git clone --recurse-submodules https://github.com/praetorian-inc/capabilities.git
 cd capabilities
 make setup
+```
+
+### Clone with internal tools (requires org access):
+```bash
+git clone --recurse-submodules https://github.com/praetorian-inc/capabilities.git
+cd capabilities
+make setup-all
 ```
 
 ### Update all submodules:
