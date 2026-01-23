@@ -16,16 +16,25 @@
 # These are NOT included in public clone and NOT in public README
 [submodule "modules/trajan"]
 	path = modules/trajan
-	url = git@github.com:praetorian-inc/trajan.git
-[submodule "modules/nero"]
-	path = modules/nero
-	url = git@github.com:praetorian-inc/nero.git
+	url = https://github.com/praetorian-inc/trajan.git
 [submodule "modules/augustus"]
 	path = modules/augustus
 	url = https://github.com/praetorian-inc/augustus.git
 [submodule "modules/noseyparkerplusplus"]
 	path = modules/noseyparkerplusplus
-	url = git@github.com:praetorian-inc/noseyparkerplusplus.git
+	url = https://github.com/praetorian-inc/noseyparkerplusplus.git
 [submodule "modules/nuclei-templates"]
 	path = modules/nuclei-templates
-	url = git@github.com:praetorian-inc/nuclei-templates.git
+	url = https://github.com/praetorian-inc/nuclei-templates.git
+[submodule "modules/nero"]
+	path = modules/nero
+	url = https://github.com/praetorian-inc/nero.git
+[submodule "modules/capability-sdk"]
+	path = modules/capability-sdk
+	url = https://github.com/praetorian-inc/capability-sdk.git
+[submodule "modules/diocletian"]
+	path = modules/diocletian
+	url = https://github.com/praetorian-inc/diocletian.git
+[submodule "modules/brutus"]
+	path = modules/brutus
+	url = https://github.com/praetorian-inc/brutus.git

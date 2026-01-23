@@ -32,19 +32,53 @@ Trajan is a comprehensive security scanner for GitHub Actions and CI/CD pipeline
 
 ---
 
-## 🏛️ Nero - Internal Security Tool
+## 👑 Augustus - LLM Security Testing Framework
 
-**Internal security capabilities.**
+**Detect prompt injection, jailbreaks, and adversarial attacks against LLMs.**
 
-**Location:** `modules/nero`
+Augustus is a comprehensive LLM security testing framework with 46+ probes and support for 19 providers, packaged as a single Go binary.
+
+**Location:** `modules/augustus`
 
 ---
 
-## 👑 Augustus - Internal Security Tool
+## 🏛️ Brutus - Credential Testing Tool
 
-**Internal security capabilities.**
+**Fast, zero-dependency credential testing in Go.**
 
-**Location:** `modules/augustus`
+Brutus is a high-performance brute force tool supporting SSH, MySQL, PostgreSQL, Redis, MongoDB, SMB, and 20+ protocols. A modern Hydra alternative with native fingerprintx/naabu pipeline integration.
+
+**Location:** `modules/brutus`
+
+---
+
+## 🛠️ Capability SDK - Go Development Kit
+
+**Go SDK for building security capabilities.**
+
+A standardized SDK providing common types, formatters, and utilities for building security tools that integrate with the Chariot platform.
+
+**Location:** `modules/capability-sdk`
+
+---
+
+## ☁️ Diocletian - Cloud Security Assessment
+
+**Comprehensive cloud security assessment tool.**
+
+Diocletian provides cloud security assessment capabilities for identifying misconfigurations and security issues across cloud environments.
+
+**Location:** `modules/diocletian`
+
+---
+
+## 🔑 Nero - Default Credential Scanner
+
+**Scan for default and weak credentials across multiple protocols.**
+
+Nero is a default credential scanner with a plugin architecture supporting multiple protocols, designed to identify systems using factory-default or commonly-used credentials.
+
+**Location:** `modules/nero`
 
 ---
 
