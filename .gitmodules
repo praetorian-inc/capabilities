@@ -38,3 +38,6 @@
 [submodule "modules/brutus"]
 	path = modules/brutus
 	url = https://github.com/praetorian-inc/brutus.git
+[submodule "modules/julius"]
+	path = modules/julius
+	url = https://github.com/praetorian-inc/julius.git

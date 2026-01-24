@@ -202,6 +202,22 @@ Diocletian provides cloud security assessment capabilities for identifying misco
 
 ---
 
+### Julius - LLM Service Fingerprinting
+
+**Identify LLM services running on target endpoints.**
+
+Julius is an LLM service fingerprinting tool that detects what AI/ML platform is running on a target by sending HTTP probes and matching responses. Supports 15+ services including Ollama, vLLM, llama.cpp, and enterprise platforms like NVIDIA NIM.
+
+**Key Features:**
+- 15+ LLM service fingerprints (self-hosted, RAG platforms, cloud)
+- YAML-based extensible probe definitions
+- Model extraction and Augustus generator integration
+- Multiple output formats (table, JSON, JSONL)
+
+[Documentation](./modules/julius)
+
+---
+
 ### NoseyParker++ - Enhanced Secret Scanner
 
 **Internal version of NoseyParker with additional ML features.**
