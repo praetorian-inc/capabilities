@@ -28,6 +28,7 @@ setup-internal: setup
 	git submodule update --init modules/brutus || echo "⚠️  brutus skipped (no access)"
 	git submodule update --init modules/capability-sdk || echo "⚠️  capability-sdk skipped (no access)"
 	git submodule update --init modules/diocletian || echo "⚠️  diocletian skipped (no access)"
+	git submodule update --init modules/julius || echo "⚠️  julius skipped (no access)"
 	git submodule update --init modules/nero || echo "⚠️  nero skipped (no access)"
 	git submodule update --init modules/noseyparkerplusplus || echo "⚠️  noseyparkerplusplus skipped (no access)"
 	git submodule update --init modules/nuclei-templates || echo "⚠️  nuclei-templates skipped (no access)"
