@@ -15,7 +15,6 @@ help:
 # Public setup (excludes private repos)
 setup:
 	@echo "Initializing public submodules..."
-	git submodule update --init modules/fingerprintx
 	git submodule update --init modules/nebula
 	git submodule update --init modules/noseyparker
 	git submodule update --init modules/noseyparker-explorer
@@ -25,13 +24,17 @@ setup:
 setup-internal: setup
 	@echo "Initializing private submodules (requires SSH access)..."
 	git submodule update --init modules/augustus || echo "⚠️  augustus skipped (no access)"
+	git submodule update --init modules/aurelian || echo "⚠️  aurelian skipped (no access)"
 	git submodule update --init modules/brutus || echo "⚠️  brutus skipped (no access)"
 	git submodule update --init modules/capability-sdk || echo "⚠️  capability-sdk skipped (no access)"
 	git submodule update --init modules/diocletian || echo "⚠️  diocletian skipped (no access)"
+	git submodule update --init modules/hadrian || echo "⚠️  hadrian skipped (no access)"
 	git submodule update --init modules/julius || echo "⚠️  julius skipped (no access)"
+	git submodule update --init modules/nerva || echo "⚠️  nerva skipped (no access)"
 	git submodule update --init modules/nero || echo "⚠️  nero skipped (no access)"
 	git submodule update --init modules/noseyparkerplusplus || echo "⚠️  noseyparkerplusplus skipped (no access)"
 	git submodule update --init modules/nuclei-templates || echo "⚠️  nuclei-templates skipped (no access)"
+	git submodule update --init modules/titus || echo "⚠️  titus skipped (no access)"
 	git submodule update --init modules/trajan || echo "⚠️  trajan skipped (no access)"
 	@echo "✅ Setup complete"
 
