@@ -47,3 +47,6 @@
 [submodule "modules/aurelian"]
 	path = modules/aurelian
 	url = https://github.com/praetorian-inc/aurelian.git
+[submodule "modules/pius"]
+	path = modules/pius
+	url = https://github.com/praetorian-inc/pius.git

@@ -170,6 +170,22 @@ Nero is a default credential scanner with a plugin architecture supporting multi
 
 ---
 
+### Pius - Asset Enumeration
+
+**Discover and enumerate assets across your attack surface.**
+
+Pius is an asset enumeration tool designed to identify and catalog assets within target environments, supporting attack surface management and reconnaissance workflows.
+
+**Key Features:**
+- Comprehensive asset discovery
+- Multiple enumeration techniques
+- Structured output for pipeline integration
+- Chariot platform integration
+
+[Documentation](./modules/pius)
+
+---
+
 ### Trajan - CI/CD Security Scanner
 
 **Detect security vulnerabilities in GitHub Actions workflows.**
