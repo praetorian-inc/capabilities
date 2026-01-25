@@ -40,17 +40,17 @@ nebula aws summary
 
 ---
 
-### Fingerprintx - Service Fingerprinting
+### Nerva - Service Fingerprinting
 
-[![GitHub stars](https://img.shields.io/github/stars/praetorian-inc/fingerprintx?style=flat-square)](https://github.com/praetorian-inc/fingerprintx/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/praetorian-inc/fingerprintx?style=flat-square)](https://github.com/praetorian-inc/fingerprintx/network/members)
-[![GitHub issues](https://img.shields.io/github/issues/praetorian-inc/fingerprintx?style=flat-square)](https://github.com/praetorian-inc/fingerprintx/issues)
-[![Go Version](https://img.shields.io/github/go-mod/go-version/praetorian-inc/fingerprintx?style=flat-square)](https://github.com/praetorian-inc/fingerprintx)
-[![License](https://img.shields.io/github/license/praetorian-inc/fingerprintx?style=flat-square)](https://github.com/praetorian-inc/fingerprintx/blob/main/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/praetorian-inc/nerva?style=flat-square)](https://github.com/praetorian-inc/nerva/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/praetorian-inc/nerva?style=flat-square)](https://github.com/praetorian-inc/nerva/network/members)
+[![GitHub issues](https://img.shields.io/github/issues/praetorian-inc/nerva?style=flat-square)](https://github.com/praetorian-inc/nerva/issues)
+[![Go Version](https://img.shields.io/github/go-mod/go-version/praetorian-inc/nerva?style=flat-square)](https://github.com/praetorian-inc/nerva)
+[![License](https://img.shields.io/github/license/praetorian-inc/nerva?style=flat-square)](https://github.com/praetorian-inc/nerva/blob/main/LICENSE)
 
 **Identify running services with precision.**
 
-Fingerprintx performs accurate service fingerprinting to identify what's actually running on open ports, going beyond simple banner grabbing.
+Nerva performs accurate service fingerprinting to identify what's actually running on open ports, going beyond simple banner grabbing.
 
 **Key Features:**
 - Protocol-aware fingerprinting
@@ -60,11 +60,11 @@ Fingerprintx performs accurate service fingerprinting to identify what's actuall
 
 **Quick Start:**
 ```bash
-go install github.com/praetorian-inc/fingerprintx@latest
-echo "example.com:443" | fingerprintx
+go install github.com/praetorian-inc/nerva@latest
+echo "example.com:443" | nerva
 ```
 
-[Documentation](./modules/fingerprintx) | [Supported Protocols](./modules/fingerprintx#protocols)
+[Documentation](./modules/nerva) | [Supported Protocols](./modules/nerva#protocols)
 
 ---
 
@@ -142,12 +142,12 @@ Augustus is a comprehensive LLM security testing framework with 46+ probes and s
 
 **Fast, zero-dependency credential testing in Go.**
 
-Brutus is a high-performance brute force tool supporting SSH, MySQL, PostgreSQL, Redis, MongoDB, SMB, and 20+ protocols. A modern Hydra alternative with native fingerprintx/naabu pipeline integration.
+Brutus is a high-performance brute force tool supporting SSH, MySQL, PostgreSQL, Redis, MongoDB, SMB, and 20+ protocols. A modern Hydra alternative with native nerva/naabu pipeline integration.
 
 **Key Features:**
 - 20+ protocol support
 - Zero external dependencies
-- Native integration with fingerprintx and naabu
+- Native integration with nerva and naabu
 - High-performance concurrent testing
 
 [Documentation](./modules/brutus)
@@ -187,18 +187,18 @@ Trajan scans CI/CD pipelines for Actions Injection, Pwn Requests, TOCTOU vulnera
 
 ---
 
-### Diocletian - Cloud Security Assessment
+### Aurelian - Cloud Security Assessment
 
 **Comprehensive cloud security assessment tool.**
 
-Diocletian provides cloud security assessment capabilities for identifying misconfigurations and security issues across cloud environments.
+Aurelian provides cloud security assessment capabilities for identifying misconfigurations and security issues across cloud environments.
 
 **Key Features:**
 - Cloud security scanning
 - Misconfiguration detection
 - Security assessment reporting
 
-[Documentation](./modules/diocletian)
+[Documentation](./modules/aurelian)
 
 ---
 
