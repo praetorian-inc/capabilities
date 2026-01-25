@@ -1,7 +1,4 @@
 # PUBLIC SUBMODULES (HTTPS - anyone can clone)
-[submodule "modules/fingerprintx"]
-	path = modules/fingerprintx
-	url = https://github.com/praetorian-inc/fingerprintx.git
 [submodule "modules/nebula"]
 	path = modules/nebula
 	url = https://github.com/praetorian-inc/nebula.git
@@ -41,3 +38,15 @@
 [submodule "modules/julius"]
 	path = modules/julius
 	url = https://github.com/praetorian-inc/julius.git
+[submodule "modules/nerva"]
+	path = modules/nerva
+	url = https://github.com/praetorian-inc/nerva.git
+[submodule "modules/titus"]
+	path = modules/titus
+	url = https://github.com/praetorian-inc/titus.git
+[submodule "modules/hadrian"]
+	path = modules/hadrian
+	url = https://github.com/praetorian-inc/hadrian.git
+[submodule "modules/aurelian"]
+	path = modules/aurelian
+	url = https://github.com/praetorian-inc/aurelian.git
