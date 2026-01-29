@@ -1,0 +1,23 @@
+mode: set
+github.com/praetorian-inc/vespasian/pkg/http/client.go:33.46,41.2 1 1
+github.com/praetorian-inc/vespasian/pkg/http/client.go:44.74,47.54 2 1
+github.com/praetorian-inc/vespasian/pkg/http/client.go:47.54,49.23 1 1
+github.com/praetorian-inc/vespasian/pkg/http/client.go:49.23,51.4 1 1
+github.com/praetorian-inc/vespasian/pkg/http/client.go:53.3,54.17 2 1
+github.com/praetorian-inc/vespasian/pkg/http/client.go:54.17,56.4 1 0
+github.com/praetorian-inc/vespasian/pkg/http/client.go:58.3,61.17 3 1
+github.com/praetorian-inc/vespasian/pkg/http/client.go:61.17,63.32 2 1
+github.com/praetorian-inc/vespasian/pkg/http/client.go:63.32,65.13 2 0
+github.com/praetorian-inc/vespasian/pkg/http/client.go:67.4,67.89 1 1
+github.com/praetorian-inc/vespasian/pkg/http/client.go:69.3,73.17 3 1
+github.com/praetorian-inc/vespasian/pkg/http/client.go:73.17,75.4 1 0
+github.com/praetorian-inc/vespasian/pkg/http/client.go:78.3,78.57 1 1
+github.com/praetorian-inc/vespasian/pkg/http/client.go:78.57,81.12 3 1
+github.com/praetorian-inc/vespasian/pkg/http/client.go:84.3,88.9 1 1
+github.com/praetorian-inc/vespasian/pkg/http/client.go:91.2,91.21 1 0
+github.com/praetorian-inc/vespasian/pkg/http/ratelimit.go:16.61,19.15 2 1
+github.com/praetorian-inc/vespasian/pkg/http/ratelimit.go:19.15,21.3 1 1
+github.com/praetorian-inc/vespasian/pkg/http/ratelimit.go:23.2,25.3 1 1
+github.com/praetorian-inc/vespasian/pkg/http/ratelimit.go:29.55,30.44 1 1
+github.com/praetorian-inc/vespasian/pkg/http/ratelimit.go:30.44,32.3 1 1
+github.com/praetorian-inc/vespasian/pkg/http/ratelimit.go:33.2,33.12 1 1
