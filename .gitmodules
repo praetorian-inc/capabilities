@@ -50,3 +50,6 @@
 [submodule "modules/pius"]
 	path = modules/pius
 	url = https://github.com/praetorian-inc/pius.git
+[submodule "modules/vespasian"]
+	path = modules/vespasian
+	url = https://github.com/praetorian-inc/vespasian.git
