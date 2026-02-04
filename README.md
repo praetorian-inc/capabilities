@@ -8,9 +8,9 @@ We prevent breaches by emulating attackers. Our goal is to help organisations pr
 
 ---
 
-## Public Tools
+## Enumeration Tools
 
-These tools are open source and available to everyone.
+Tools for discovering assets, services, endpoints, and secrets across your attack surface.
 
 ### Nebula - Multi-Cloud Security Scanner
 
@@ -68,105 +68,34 @@ echo "example.com:443" | nerva
 
 ---
 
-### NoseyParker - Secret Scanner
+### Aurelian - Cloud Security Assessment
 
-[![GitHub stars](https://img.shields.io/github/stars/praetorian-inc/noseyparker?style=flat-square)](https://github.com/praetorian-inc/noseyparker/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/praetorian-inc/noseyparker?style=flat-square)](https://github.com/praetorian-inc/noseyparker/network/members)
-[![GitHub issues](https://img.shields.io/github/issues/praetorian-inc/noseyparker?style=flat-square)](https://github.com/praetorian-inc/noseyparker/issues)
-[![License](https://img.shields.io/github/license/praetorian-inc/noseyparker?style=flat-square)](https://github.com/praetorian-inc/noseyparker/blob/main/LICENSE)
-![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=flat-square&logo=rust&logoColor=white)
+**Comprehensive cloud security assessment tool.**
 
-**Find secrets in code repositories at scale.**
-
-NoseyParker is a high-performance secret scanning engine written in Rust, designed to detect leaked credentials, API keys, and sensitive data.
+Aurelian provides cloud security assessment capabilities for identifying misconfigurations and security issues across cloud environments.
 
 **Key Features:**
-- 150+ secret detection rules
-- Git history scanning
-- Fast parallel processing (Rust)
-- Low false positive rate
+- Cloud security scanning
+- Misconfiguration detection
+- Security assessment reporting
 
-**Quick Start:**
-```bash
-cargo install noseyparker
-noseyparker scan --datastore np.db ./your-repo
-noseyparker report --datastore np.db
-```
-
-[Documentation](./modules/noseyparker) | [NoseyParker Explorer](./modules/noseyparker-explorer)
+[Documentation](./modules/aurelian)
 
 ---
 
-### NoseyParker Explorer - Web UI
+### Julius - LLM Service Enumeration 
 
-[![GitHub stars](https://img.shields.io/github/stars/praetorian-inc/noseyparker-explorer?style=flat-square)](https://github.com/praetorian-inc/noseyparker-explorer/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/praetorian-inc/noseyparker-explorer?style=flat-square)](https://github.com/praetorian-inc/noseyparker-explorer/network/members)
-[![GitHub issues](https://img.shields.io/github/issues/praetorian-inc/noseyparker-explorer?style=flat-square)](https://github.com/praetorian-inc/noseyparker-explorer/issues)
-[![License](https://img.shields.io/github/license/praetorian-inc/noseyparker-explorer?style=flat-square)](https://github.com/praetorian-inc/noseyparker-explorer/blob/main/LICENSE)
+**Identify LLM services running on target endpoints.**
 
-**Visualize and triage secret findings.**
-
-A web-based interface for exploring NoseyParker scan results, designed for security teams to efficiently triage and manage findings.
+Julius is an LLM service fingerprinting tool that detects what AI/ML platform is running on a target by sending HTTP probes and matching responses. Supports 15+ services including Ollama, vLLM, llama.cpp, and enterprise platforms like NVIDIA NIM.
 
 **Key Features:**
-- Interactive findings browser
-- Filtering and search
-- Export capabilities
-- Team collaboration
+- 15+ LLM service fingerprints (self-hosted, RAG platforms, cloud)
+- YAML-based extensible probe definitions
+- Model extraction and Augustus generator integration
+- Multiple output formats (table, JSON, JSONL)
 
-[Documentation](./modules/noseyparker-explorer) | [Screenshots](./modules/noseyparker-explorer#screenshots)
-
----
-
-## Internal Tools
-
-These tools are available to Praetorian team members and require GitHub organization access.
-
-### Augustus - LLM Security Testing Framework
-
-**Detect prompt injection, jailbreaks, and adversarial attacks against LLMs.**
-
-Augustus is a comprehensive LLM security testing framework with 46+ probes and support for 19 providers, packaged as a single Go binary.
-
-**Key Features:**
-- 46+ security probes for LLM testing
-- Support for 19 LLM providers
-- Prompt injection and jailbreak detection
-- Adversarial attack simulation
-
-[Documentation](./modules/augustus)
-
----
-
-### Brutus - Credential Testing Tool
-
-**Fast, zero-dependency credential testing in Go.**
-
-Brutus is a high-performance brute force tool supporting SSH, MySQL, PostgreSQL, Redis, MongoDB, SMB, and 20+ protocols. A modern Hydra alternative with native nerva/naabu pipeline integration.
-
-**Key Features:**
-- 20+ protocol support
-- Zero external dependencies
-- Native integration with nerva and naabu
-- High-performance concurrent testing
-
-[Documentation](./modules/brutus)
-
----
-
-### Nero - Default Credential Scanner
-
-**Scan for default and weak credentials across multiple protocols.**
-
-Nero is a default credential scanner with a plugin architecture supporting multiple protocols, designed to identify systems using factory-default or commonly-used credentials.
-
-**Key Features:**
-- Plugin-based architecture
-- Multi-protocol support
-- Default credential database
-- Extensible framework
-
-[Documentation](./modules/nero)
+[Documentation](./modules/julius)
 
 ---
 
@@ -186,7 +115,130 @@ Pius is an asset enumeration tool designed to identify and catalog assets within
 
 ---
 
-### Trajan - CI/CD Security Scanner
+### Titus - Secret Enumeration
+
+**High-performance secrets detection with Burp Suite integration.**
+
+Titus is a Go port of NoseyParker, a secrets scanning engine with 444+ detection rules, server mode for Burp Suite integration, and a Chrome browser extension.
+
+**Key Features:**
+- 444+ secret detection rules
+- Burp Suite extension with passive/active scanning
+- Chrome browser extension for web page scanning
+- NDJSON streaming protocol for integrations
+
+**Quick Start:**
+```bash
+make build
+titus scan --file config.json
+titus serve  # Server mode for Burp integration
+```
+
+[Documentation](./modules/titus)
+
+---
+
+### Vespasian - API Surface Enumeration
+
+**Discover API endpoints across OpenAPI, GraphQL, gRPC, WebSocket, and WSDL.**
+
+Vespasian is a comprehensive API surface enumeration tool that discovers API endpoints from multiple sources including OpenAPI/Swagger, GraphQL introspection, gRPC reflection, WebSocket detection, and JavaScript analysis.
+
+**Key Features:**
+- Multi-protocol discovery (HTTP, gRPC, WebSocket, SOAP)
+- OpenAPI/Swagger, GraphQL, gRPC, WSDL parsing
+- JavaScript API endpoint extraction
+- Multiple output formats (JSON, SARIF, Markdown)
+
+**Quick Start:**
+```bash
+go install github.com/praetorian-inc/vespasian/cmd/vespasian@latest
+vespasian scan config.yaml https://api.example.com
+```
+
+[Documentation](./modules/vespasian)
+
+---
+
+## Attack Tools
+
+Tools for testing vulnerabilities, exploiting weaknesses, and validating security controls.
+
+### Augustus - LLM Attack Framework
+
+**Detect prompt injection, jailbreaks, and adversarial attacks against LLMs.**
+
+Augustus is a comprehensive LLM security testing framework with 46+ probes and support for 19 providers, packaged as a single Go binary.
+
+**Key Features:**
+- 46+ security probes for LLM testing
+- Support for 19 LLM providers
+- Prompt injection and jailbreak detection
+- Adversarial attack simulation
+
+[Documentation](./modules/augustus)
+
+---
+
+### Brutus - Credential Attack Framework
+
+**Fast, zero-dependency credential testing in Go.**
+
+Brutus is a high-performance brute force tool supporting SSH, MySQL, PostgreSQL, Redis, MongoDB, SMB, and 20+ protocols. A modern Hydra alternative with native nerva/naabu pipeline integration.
+
+**Key Features:**
+- 20+ protocol support
+- Zero external dependencies
+- Native integration with nerva and naabu
+- High-performance concurrent testing
+
+[Documentation](./modules/brutus)
+
+---
+
+### Hadrian - API Attack Framework
+
+**Detect OWASP API vulnerabilities with role-based authorization testing.**
+
+Hadrian is a security testing framework for REST APIs that tests for OWASP API vulnerabilities using role-based authorization testing and YAML-driven templates.
+
+**Key Features:**
+- OWASP API Top 10 coverage (BOLA, broken authentication)
+- Role-based authorization testing
+- Template-driven security tests
+- LLM triage integration (Anthropic, OpenAI, Ollama)
+
+**Quick Start:**
+```bash
+go install github.com/praetorian-inc/hadrian/cmd/hadrian@latest
+hadrian test --api api.yaml --roles roles.yaml
+```
+
+[Documentation](./modules/hadrian)
+
+---
+
+### Nero - Phishing Attack Framework
+
+**Man-in-the-middle phishing framework for credential and session token harvesting.**
+
+Nero is a phishing campaign capability that achieves feature parity with Evilginx2, implementing reverse proxy-based credential harvesting with real-time 2FA/MFA bypass through session cookie capture.
+
+**Key Features:**
+- Reverse proxy phishing engine for MitM attacks
+- Phishlet system with YAML-based target templates
+- Real-time session and credential harvesting
+- 2FA/MFA bypass through session cookie capture
+- Campaign management with lures, tracking, and analytics
+- Infrastructure automation (DNS, TLS, deployment)
+- Bot detection and evasion capabilities
+- GoPhish integration for campaign management
+
+[Documentation](./modules/nero)
+
+---
+
+### Trajan - CI/CD Attack Framework 
 
 **Detect security vulnerabilities in GitHub Actions workflows.**
 
@@ -203,50 +255,23 @@ Trajan scans CI/CD pipelines for Actions Injection, Pwn Requests, TOCTOU vulnera
 
 ---
 
-### Aurelian - Cloud Security Assessment
+## Supporting Tools
 
-**Comprehensive cloud security assessment tool.**
+Shared libraries and templates that power our security capabilities.
 
-Aurelian provides cloud security assessment capabilities for identifying misconfigurations and security issues across cloud environments.
+### Capability SDK - Go Development Kit
 
-**Key Features:**
-- Cloud security scanning
-- Misconfiguration detection
-- Security assessment reporting
+**Go SDK for building security capabilities.**
 
-[Documentation](./modules/aurelian)
-
----
-
-### Julius - LLM Service Fingerprinting
-
-**Identify LLM services running on target endpoints.**
-
-Julius is an LLM service fingerprinting tool that detects what AI/ML platform is running on a target by sending HTTP probes and matching responses. Supports 15+ services including Ollama, vLLM, llama.cpp, and enterprise platforms like NVIDIA NIM.
+A standardized SDK providing common types, formatters, and utilities for building security tools that integrate with the Chariot platform.
 
 **Key Features:**
-- 15+ LLM service fingerprints (self-hosted, RAG platforms, cloud)
-- YAML-based extensible probe definitions
-- Model extraction and Augustus generator integration
-- Multiple output formats (table, JSON, JSONL)
+- Standardized output types
+- Chariot integration helpers
+- Common formatters
+- Reusable utilities
 
-[Documentation](./modules/julius)
-
----
-
-### NoseyParker++ - Enhanced Secret Scanner
-
-**Internal version of NoseyParker with additional ML features.**
-
-An enhanced version of NoseyParker that includes machine learning capabilities for improved secret detection and reduced false positives.
-
-**Key Features:**
-- All NoseyParker features
-- ML-enhanced detection
-- Reduced false positive rate
-- Internal rule sets
-
-[Documentation](./modules/noseyparkerplusplus)
+[Documentation](./modules/capability-sdk)
 
 ---
 
@@ -262,22 +287,6 @@ A curated collection of Nuclei templates including internal templates and custom
 - Praetorian-specific checks
 
 [Documentation](./modules/nuclei-templates)
-
----
-
-### Capability SDK - Go Development Kit
-
-**Go SDK for building security capabilities.**
-
-A standardized SDK providing common types, formatters, and utilities for building security tools that integrate with the Chariot platform.
-
-**Key Features:**
-- Standardized output types
-- Chariot integration helpers
-- Common formatters
-- Reusable utilities
-
-[Documentation](./modules/capability-sdk)
 
 ---
 
