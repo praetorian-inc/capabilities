@@ -12,34 +12,6 @@ We prevent breaches by emulating attackers. Our goal is to help organisations pr
 
 Tools for discovering assets, services, endpoints, and secrets across your attack surface.
 
-### Nebula - Multi-Cloud Security Scanner
-
-[![GitHub stars](https://img.shields.io/github/stars/praetorian-inc/nebula?style=flat-square)](https://github.com/praetorian-inc/nebula/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/praetorian-inc/nebula?style=flat-square)](https://github.com/praetorian-inc/nebula/network/members)
-[![GitHub issues](https://img.shields.io/github/issues/praetorian-inc/nebula?style=flat-square)](https://github.com/praetorian-inc/nebula/issues)
-[![Go Version](https://img.shields.io/github/go-mod/go-version/praetorian-inc/nebula?style=flat-square)](https://github.com/praetorian-inc/nebula)
-[![License](https://img.shields.io/github/license/praetorian-inc/nebula?style=flat-square)](https://github.com/praetorian-inc/nebula/blob/main/LICENSE)
-
-**Unified security scanning across AWS, Azure, and GCP.**
-
-Nebula provides comprehensive cloud security assessment with findings formatted for the Chariot attack surface management platform.
-
-**Key Features:**
-- Multi-cloud support (AWS, Azure, GCP)
-- IAM analysis and privilege escalation detection
-- Resource misconfiguration scanning
-- Chariot integration for centralized visibility
-
-**Quick Start:**
-```bash
-go install github.com/praetorian-inc/nebula@latest
-nebula aws summary
-```
-
-[Documentation](./modules/nebula) | [Configuration](./modules/nebula#configuration)
-
----
-
 ### Nerva - Service Fingerprinting
 
 [![GitHub stars](https://img.shields.io/github/stars/praetorian-inc/nerva?style=flat-square)](https://github.com/praetorian-inc/nerva/stargazers)
@@ -65,21 +37,6 @@ echo "example.com:443" | nerva
 ```
 
 [Documentation](./modules/nerva) | [Supported Protocols](./modules/nerva#protocols)
-
----
-
-### Aurelian - Cloud Security Assessment
-
-**Comprehensive cloud security assessment tool.**
-
-Aurelian provides cloud security assessment capabilities for identifying misconfigurations and security issues across cloud environments.
-
-**Key Features:**
-- Cloud security scanning
-- Misconfiguration detection
-- Security assessment reporting
-
-[Documentation](./modules/aurelian)
 
 ---
 
@@ -177,6 +134,21 @@ Augustus is a comprehensive LLM security testing framework with 46+ probes and s
 - Adversarial attack simulation
 
 [Documentation](./modules/augustus)
+
+---
+
+### Aurelian - Cloud Attack Framework
+
+**Comprehensive cloud attack tool.**
+
+Aurelian provides cloud attack capabilities for identifying misconfigurations and security issues across cloud environments.
+
+**Key Features:**
+- Cloud security scanning
+- Misconfiguration detection
+- Security assessment reporting
+
+[Documentation](./modules/aurelian)
 
 ---
 
