@@ -152,6 +152,22 @@ Aurelian provides cloud attack capabilities for identifying misconfigurations an
 
 ---
 
+### Constantine - Vulnerability Discovery & Exploitation Engine
+
+**Discover and exploit vulnerabilities across your attack surface.**
+
+Constantine is a vulnerability discovery and exploitation engine that orchestrates scanning, ingestion, and reporting workflows to identify and validate exploitable vulnerabilities at scale.
+
+**Key Features:**
+- Automated vulnerability discovery and exploitation
+- Modular scanner and reporter architecture
+- Orchestrated scanning workflows
+- Structured reporting for integration pipelines
+
+[Documentation](./modules/constantine)
+
+---
+
 ### Brutus - Credential Attack Framework
 
 **Fast, zero-dependency credential testing in Go.**
