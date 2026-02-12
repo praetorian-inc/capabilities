@@ -53,3 +53,6 @@
 [submodule "modules/vespasian"]
 	path = modules/vespasian
 	url = https://github.com/praetorian-inc/vespasian.git
+[submodule "modules/constantine"]
+	path = modules/constantine
+	url = https://github.com/praetorian-inc/constantine.git
